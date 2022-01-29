@@ -1,2 +1,2 @@
 # JavaScript
-Exercícios de javascript !!!
+Meus exercícios de javascript - Curso em Vídeo !!!
