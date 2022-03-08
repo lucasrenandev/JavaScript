@@ -14,7 +14,7 @@
     </style>
 </head>
 <body>
-    <h1>Iniciando os estudos com DOM !!!</h1>
+    <h1 name="des">Iniciando os estudos com DOM !!!</h1>
     <p>Aqui vai o resultado.</p>
     <p>Aprendendo a usar <strong>DOM</strong> em javascript</p>
     <div id="msg">Clique em mim</div>
@@ -28,8 +28,9 @@
        window.document.getElementById('msg').innerText = 'Olá'
         */
        var d = window.document.querySelector('div#msg')
-       d.style.background = 'blue'
-       
+       d.style.background = 'green'
+       var des = window.document.getElementsByName('des')[0]
+       des.style.color='blue'
 
        
     </script>
