@@ -7,6 +7,6 @@ function conversormoeda() {
     dolar = (real / 5).toFixed(2) 
     euro = (real / 5.54).toFixed(2)
 
-    res.innerHTML = `Com R$${real} você pode comprar US$${dolar} (Dolar) <br> E tambêm pode comprar £ ${euro} (Euro)`
+    res.innerHTML = `Com R$${real} você pode comprar US$${dolar} (Dolar) <br> E tambêm pode comprar £${euro} (Euro)`
 
 }
