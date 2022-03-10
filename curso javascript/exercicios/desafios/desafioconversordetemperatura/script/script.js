@@ -1,5 +1,5 @@
 function conversortemp() {
-    let cel = parseFloat(window.prompt('Informe uma temperatura em °C (Celsius)'))
+    let cel = parseInt(window.prompt('Informe uma temperatura em °C (Celsius)'))
     let res = document.getElementById('res')
 
     let fahre = (cel * 1.8) + 32
