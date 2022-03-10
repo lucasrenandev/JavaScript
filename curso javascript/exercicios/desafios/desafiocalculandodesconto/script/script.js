@@ -3,7 +3,7 @@ function desconto() {
     let preço = parseFloat(window.prompt(`Qual o preço do produto ${produto}?`))
     let res = document.getElementById('res')
 
-    originalpreco = 795.98
+    originalpreco = preço.toFixed(2)
     desc = (preço * 10 / 100)
     novopreco = preço - (preço * 10 / 100)
 
