@@ -1,8 +1,8 @@
 var msg = window.document.getElementById('msg')
 var img = window.document.getElementById('imagem')
 var date = new Date()
-//var hora = date.getHours()
-var hora = 22
+//var hora = date.getHours() 
+var hora = 15
 msg.innerHTML=`Agora são ${hora} horas.`
 if (hora >= 0  && hora < 12) {
     //Bom dia!
