@@ -1,9 +1,10 @@
 body {
-    background-color: steelblue;
+    background-color: rgb(45, 131, 202);
     font: normal 15pt arial;
 
 }
 header {
+    color: white;
     text-align: center;
 
 }
