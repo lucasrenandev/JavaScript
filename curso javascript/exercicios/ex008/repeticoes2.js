@@ -12,13 +12,3 @@ while (c <= 6) {
     c++
 }
 */
-
-
-/*
-console.log('Tudo bem? ')
-console.log('Tudo bem? ')
-console.log('Tudo bem? ')
-console.log('Tudo bem? ')
-console.log('Tudo bem? ')
-console.log('Tudo bem? ')
-*/
