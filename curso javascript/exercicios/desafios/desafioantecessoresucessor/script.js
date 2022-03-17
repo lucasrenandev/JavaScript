@@ -1,8 +1,5 @@
 function antecessoresucessor() {
-    let int = Number(window.prompt('Digite um número inteiro qualquer: '))
+    let num = Number(window.prompt('Digite um número inteiro qualquer: '))
 
-    let ant = String(int-1);
-    let suce = String(int+1);
-
-    window.alert(`Analisando o número ${int} seu antecessor é ${ant} e seu sucessor é ${suce}.`)
+    window.alert(`Analisando o número ${num} seu antecessor é ${num-1} e seu sucessor é ${num+1}.`)
 }
