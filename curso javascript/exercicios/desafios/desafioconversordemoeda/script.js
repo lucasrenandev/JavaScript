@@ -1,12 +1,13 @@
-window.prompt('Antes de mais nada, qual a cotação do Dolar atual?')
+var cotação = Number(window.prompt('Antes de mais nada, qual a cotação do Dolar atual?'))
 
 function conversormoeda() {
     var real = parseFloat(window.prompt('Quantos R$ você tem na carteira? '))
+    let dolar = real / cotação
     var res = document.getElementById('res')
 
-    dolar = (real / 5).toFixed(2) 
-    euro = (real / 5.54).toFixed(2)
-
-    res.innerHTML = `Com R$${real} você pode comprar US$${dolar} (Dolar) <br> E tambêm pode comprar £${euro} (Euro)`
+    res.innerHTML = '<h2>Conversão de Reais para Doláres</h2>'
+    res.innerHTML += `<p>Você tem R$${real.toLocaleString('pt-BR')} na carteira.</p>`
+    res.innerHTML += `<p>Considerando que US$1.00 = ${cotação.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} na cotação informada.</p>`
+    res.innerHTML += `<p>Com R$${real} você pode comprar ${dolar.toLocaleString('en-US', {style: 'currency', currency: 'USD'})} Dólares.`
 
 }
