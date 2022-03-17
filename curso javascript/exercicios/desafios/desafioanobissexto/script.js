@@ -1,5 +1,5 @@
 function AnoBissexto() {
-    const ano = parseInt(window.prompt('Qual o ano que você quer verificar? '))
+    const ano = Number(window.prompt('Qual o ano que você quer verificar? '))
     const res = document.querySelector('div#res')
 
     if(ano % 4 == 0 && (ano % 100 != 0 || (ano % 400 == 0) )) {
