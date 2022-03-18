@@ -1,7 +1,7 @@
 function verificarNotas() {
     const nome = window.prompt('Qual o nome do aluno? ')
-    const nota1 = parseFloat(window.prompt('Qual a primeira nota de ' + nome + '?'))
-    const nota2 = parseFloat(window.prompt('Qual a segunda nota de ' + nome + '?'))
+    const nota1 = Number(window.prompt('Qual a primeira nota de ' + nome + '?'))
+    const nota2 = Number(window.prompt('Qual a segunda nota de ' + nome + '?'))
     const res = document.getElementById('res')
     
 
@@ -9,11 +9,11 @@ function verificarNotas() {
 
     let msg 
     if (média > 6) {
-        msg = `Com média acima de <mark>6</mark>, o aluno esta <strong style=color:green;>APROVADO!`
+        msg = `Com média acima de <mark>6</mark>, o aluno está <strong style=color:green;>APROVADO!`
     }else if (média >= 3 && (média <= 6)) {
-        msg = `Com média entre <mark>3</mark> e <mark>6</mark>, o aluno esta em <strong style=background:orange;>RECUPERAÇÃO!</strong>`
+        msg = `Com média entre <mark>3</mark> e <mark>6</mark>, o aluno está em <strong style=color:darkorange;>RECUPERAÇÃO!</strong>`
     }else if (média < 3) {
-        msg = `Com média abaixo de <mark>3</mark>, o aluno esta <strong style=color:red;>REPROVADO!`
+        msg = `Com média abaixo de <mark>3</mark>, o aluno está <strong style=color:red;>REPROVADO!`
     }
     
     res.innerHTML = `<p><strong>Analisando a situação de ${nome}...</strong></p>`.toUpperCase()
