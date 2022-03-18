@@ -3,20 +3,20 @@ function Verificar() {
     let atualpreço = Number(window.prompt('Qual o preço atual do produto? '))
     let res = document.getElementById('res')
 
-    aumento = (preço * 5.6 / 100).toFixed(2)
-    desconto = (atualpreço * 12.36 / 100).toFixed(2)
+    aumento = (preço * 5.6) / 100
+    desconto = (atualpreço * 12.36) / 100
 
     let msg
     if (preço < atualpreço) {
-        msg = `O produto custava R$${preço} e agora custa R$${atualpreço}`
+        msg = `O produto custava ${preço.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} e agora custa ${atualpreço.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`
         msg += '<p>Hoje o produto está mais caro.</p>'
-        msg += `<p>O preço subiu R$${aumento} em relação ao anterior.`
+        msg += `<p>O preço subiu ${aumento.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} em relação ao anterior.`
         msg += '<p>Uma variação de 5,6% pra cima.</p>'
     }else if (preço > atualpreço) {
-        msg = `O produto custava R$${preço} e agora custa R$${atualpreço}`
+        msg = `O produto custava ${preço.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} e agora custa ${atualpreço.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`
         msg += '<p>Hoje o produto está mais barato.</p>'
-        msg += `<p>O preço caiu R$${desconto} em relação ao preço anterior.</p>`
-        msg += 'Uma variação de 12,36% pra baixo.'
+        msg += `<p>O preço caiu ${desconto.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} em relação ao preço anterior.</p>`
+        msg += '<p>Uma variação de 12,36% pra baixo.<p>'
     }
 
     res.innerHTML = '<h2>Analisando os valores informados...</h2>'
