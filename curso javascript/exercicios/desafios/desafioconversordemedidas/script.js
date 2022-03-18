@@ -1,5 +1,5 @@
 function converter() {
-    let metros = parseFloat(window.prompt('Digite uma distância em metros (m)'))
+    let metros = Number(window.prompt('Digite uma distância em metros (m)'))
     let res = document.getElementById('res')
 
     km = metros / 1000
@@ -9,6 +9,13 @@ function converter() {
     cm = metros / 0.01
     mm = metros / 0.001
 
-    res.innerHTML = `A distância de ${metros} metros corresponde a... <br> ${km} quilômetros (Km) <br> ${hm} hequitômetro (Hm) <br> ${deca} decâmetros (Dam) <br> ${deci} decímetros (dm) <br> ${cm} centímetros (cm) <br> ${mm} milímetros (mm)`
+    res.innerHTML = `<h2>A distância de ${metros} metros corresponde a...</h2>`
+    res.innerHTML += `<p>${km} quilômetros (Km)</p>`
+    res.innerHTML += `<p>${hm} hequitômetro (Hm)</p>`
+    res.innerHTML += `<p>${deca} decâmetros (Dam)</p>`
+    res.innerHTML += `<p>${deci} decímetros (dm) </p>`
+    res.innerHTML += `<p>${cm} centímetros (cm)</p>`
+    res.innerHTML += `<p>${mm} milímetros (mm)</p>`
+    
     
 }
