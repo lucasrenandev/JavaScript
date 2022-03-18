@@ -19,6 +19,6 @@ function Verificar() {
         msg += 'Uma variação de 12,36% pra baixo.'
     }
 
-    res.innerHTML = '<strong><p>Analisando os valores informados...</p></strong>'.toUpperCase()
+    res.innerHTML = '<h2>Analisando os valores informados...</h2>'
     res.innerHTML += msg
 }
