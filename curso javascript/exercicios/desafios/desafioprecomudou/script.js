@@ -3,8 +3,8 @@ function Verificar() {
     let atualpreço = Number(window.prompt('Qual o preço atual do produto? '))
     let res = document.getElementById('res')
 
-    aumento = (preço * 5.6) / 100
-    desconto = (atualpreço * 12.36) / 100
+    aumento = (atualpreço - preço) 
+    desconto = (preço - atualpreço)
 
     let msg
     if (preço < atualpreço) {
