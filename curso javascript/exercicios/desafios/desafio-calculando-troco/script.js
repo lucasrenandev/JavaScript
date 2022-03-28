@@ -4,7 +4,7 @@ function troco() {
     let valor = Number(window.prompt(`Qual foi o valor que você deu para pagar o produto ${compra}? R$`))
 
     preco = preco
-    retorno = valor - preco
+    let retorno = valor - preco
     
     window.alert(`Você comprou o produto ${compra} que custou R$${preco.toFixed(2)}.\nVocê deu R$${valor} em dinheiro e vai receber R$${retorno.toFixed(2)} de troco.\nVolte sempre!`)
     
