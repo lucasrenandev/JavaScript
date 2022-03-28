@@ -1,8 +1,8 @@
 function verificarNotas() {
-    const nome = window.prompt('Qual o nome do aluno? ')
-    const nota1 = Number(window.prompt('Qual a primeira nota de ' + nome + '?'))
-    const nota2 = Number(window.prompt('Qual a segunda nota de ' + nome + '?'))
-    const res = document.getElementById('res')
+    let nome = window.prompt('Qual o nome do aluno? ')
+    let nota1 = Number(window.prompt('Qual a primeira nota de ' + nome + '?'))
+    let nota2 = Number(window.prompt('Qual a segunda nota de ' + nome + '?'))
+    let res = document.getElementById('res')
     
 
     let média = (nota1 + nota2) / 2
