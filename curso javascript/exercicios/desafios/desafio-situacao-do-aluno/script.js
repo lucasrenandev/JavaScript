@@ -5,7 +5,7 @@ function verificarNotas() {
     const res = document.getElementById('res')
     
 
-    média = (nota1 + nota2) / 2
+    let média = (nota1 + nota2) / 2
 
     let msg 
     if (média > 6) {
