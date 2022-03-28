@@ -1,9 +1,9 @@
-var cotação = Number(window.prompt('Antes de mais nada, qual a cotação do Dolar atual?'))
+let cotação = Number(window.prompt('Antes de mais nada, qual a cotação do Dolar atual?'))
 
 function conversormoeda() {
-    var real = Number(window.prompt('Quantos R$ você tem na carteira? '))
+    let real = Number(window.prompt('Quantos R$ você tem na carteira? '))
     let dolar = real / cotação
-    var res = document.getElementById('res')
+    let res = document.getElementById('res')
 
     res.innerHTML = '<h2>Conversão de Reais para Doláres</h2>'
     res.innerHTML += `<p>Você tem ${real.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} na carteira.</p>`
