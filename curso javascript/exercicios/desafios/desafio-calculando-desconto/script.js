@@ -3,9 +3,9 @@ function desconto() {
     let preço = Number(window.prompt(`Qual o preço do produto ${produto}?`))
     let res = document.getElementById('res')
 
-    originalpreco = preço
-    desc = (preço * 10 / 100)
-    novopreco = preço - (preço * 10 / 100)
+    let originalpreco = preço
+    let desc = (preço * 10 / 100)
+    let novopreco = preço - (preço * 10 / 100)
 
     res.innerHTML = `<h2>Calculando desconto de 10% para ${produto} ...</h2>`
     res.innerHTML += `<p>O preço original era R$ ${originalpreco.toFixed(2)}.</p>`
