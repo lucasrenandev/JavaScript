@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body {
+            font: 15pt Arial;
+        }
+        div#area {
+            font: 20pt Arial;
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Eventos DOM</h1>
+
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Intereja
+    </div>
+
+    <script>
+        var area = document.getElementById('area')  //Variáveis criadas fora de blocos, são consideradas GLOBAIS e funcionam dentro de qualquer lugar ou função.
+        //Variáveis criadas dentro de funções são consideradas LOCAIS, e só funcionam dentro da mesma.
+
+        function clicar() {
+            area.innerText = 'Clicou!'
+            area.style.background = 'red'
+        }
+        function entrar() {
+            area.innerText = 'Entrou!'
+            area.style.background = 'blue'
+        }
+        function sair()    {
+            area.innerText = 'Saiu!'
+            area.style.background = 'green'
+        }
+        
+    </script>
+    
+</body>
+</html>

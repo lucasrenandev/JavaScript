@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício</title>
+    <style>
+        body {
+            font: 15pt Arial;
+        }
+    </style>
+
+</head>
+<body>
+
+    <script>
+        var nome = window.prompt('Qual o seu nome?')
+        document.write('Olá <strong>' + nome + ',</strong> Seu nome tem ' + nome.length + ' letras. <br>')  //length = Retorna quantos caracteres a String tem
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}. <br>`)  //toUpperCase() = Tudo para maiúsculas
+        document.write('Seu nome em minúsculas é ' + nome.toLowerCase() + '.')  //toLowerCase() = Tudo para minúsculas
+
+
+        //toFixed(2) = para pegar duas casas decimais
+        //toFixed(2).replace('.', ',') = para trocar ponto(.) por vírgula (,) ou vice e versa 
+        //toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) = Conversão de números(BRL para REAL) 
+        //toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}) = Conversão de números(USD para DOLAR)
+        //toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}) = Conversão de números(EUR para EURO)  
+    </script>
+    
+</body>
+</html>
